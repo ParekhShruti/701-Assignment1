@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node JS AJAX Example</title>
+</head>
+<body>
+    <h2>NodeJS Example</h2>
+
+    <button onclick="getData()">Click Here</button>
+
+    <p id="result"></p>
+
+    <script>
+        function getData() {
+            fetch("/gethello")
+            //The server's reply comes back as a response object.
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("result").innerHTML = data;
+            });
+        }
+    </script>
+</body>
+</html>

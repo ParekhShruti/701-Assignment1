@@ -1,0 +1,16 @@
+{
+  "name": "q8",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "node server.js",
+    "test": "node test.js",
+    "start": "node app.js",
+    "hello": "echo Hello NodeJS",
+    "info": "node info.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
